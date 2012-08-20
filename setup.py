@@ -8,7 +8,7 @@ import os
 # For example, a packaging bugfix release version 1.4.4 of the
 # js.jquery package would be version 1.4.4-1 .
 
-version = '1.0dev'
+version = '1.0'
 
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
@@ -23,13 +23,11 @@ long_description = (
 setup(
     name='js',
     version=version,
-    description="Fanstatic packaging of Root directory for Fanstatic packages",
+    description="Root directory for Fanstatic packages",
     long_description=long_description,
     classifiers=[],
     keywords='',
-    author='Fanstatic Developers',
-    author_email='fanstatic@googlegroups.com',
-    license='BSD',
+    license='MIT',
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
